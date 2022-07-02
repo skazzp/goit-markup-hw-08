@@ -1,0 +1,37 @@
+/* Соцсети */
+.socials-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.socials-list__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: $soc-main-color;
+  transition: fill $duration $timing, background-color $duration $timing;
+  &:hover,
+  &:focus {
+    background-color: $bg-button;
+    fill: $accent-text;
+  }
+}
+
+.socials-list__item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.socials-list__logo {
+  display: block;
+  width: 20px;
+  height: 20px;
+}

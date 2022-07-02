@@ -1,0 +1,19 @@
+/* Лого */
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+  font-family: 'Raleway', sans-serif;
+  color: $color-main;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo__accent {
+  color: $color-accent;
+}
+.logo__foot {
+  margin-right: 0;
+  color: $accent-text;
+}

@@ -1,0 +1,48 @@
+/* Соцсети ФУТЕР */
+.footer-socials {
+  margin-right: 93px;
+}
+.footer-socials__title {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $accent-text;
+}
+.foot-socials-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.foot-socials-list__item {
+  margin-bottom: 30;
+  padding: 0;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.foot-socials-list__link {
+  display: flex;
+  fill: $accent-text;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: fill $duration $timing, background-color $duration $timing;
+  &:hover,
+  &:focus {
+    background-color: $bg-button;
+    fill: $accent-text;
+  }
+}
+
+.foot-socials-list__logo {
+  width: 20px;
+  height: 20px;
+}

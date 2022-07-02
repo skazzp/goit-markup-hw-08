@@ -1,0 +1,32 @@
+/* Секция WORK */
+.work {
+  padding-top: 47px;
+}
+.work__title {
+  margin-bottom: 50px;
+}
+.work-list {
+  display: flex;
+}
+.work-list__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.work-list__text {
+  display: inline-block;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  padding-bottom: 27px;
+  padding-top: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $accent-text;
+  background-color: rgba(47, 48, 58, 0.8);
+}

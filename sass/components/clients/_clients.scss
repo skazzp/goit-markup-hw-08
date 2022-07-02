@@ -1,0 +1,28 @@
+/* Секция CLIENTS */
+.clients__title {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+.clients-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: $soc-main-color;
+  transition: fill $duration $timing, border $duration $timing;
+  &:hover,
+  &:focus {
+    border: 1px solid $color-accent;
+    fill: $color-accent;
+  }
+}
+.clients-list__icon {
+  width: 106px;
+  height: 60px;
+}

@@ -1,0 +1,29 @@
+.address-box {
+  margin-right: 70px;
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
+.address-list__addr {
+  color: $accent-text;
+  font-style: normal;
+  text-decoration: none;
+  transition: color $duration $timing;
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+.address-list__cont {
+  color: $foot-cont;
+  font-style: normal;
+  text-decoration: none;
+  transition: color $duration $timing;
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}

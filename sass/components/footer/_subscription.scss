@@ -1,0 +1,37 @@
+/* Subscription */
+.sub-box__title {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $accent-text;
+}
+.sub-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sub-form__input-box {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  margin-right: 12px;
+  transition: border $duration $timing;
+}
+.sub-form__input-box:hover,
+.sub-form__input-box:focus {
+  border: 1px solid $color-accent;
+  outline: none;
+  color: $accent-text;
+}
+.sub-form__icon {
+  margin-left: 10px;
+  fill: $bg-main;
+}
