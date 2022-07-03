@@ -1,6 +1,10 @@
 /* Секция WORK */
 .work {
-  padding-top: 47px;
+  display: none;
+  @media screen and (min-width: $w-tab) {
+    display: block;
+    padding-top: 47px;
+  }
 }
 .work__title {
   margin-bottom: 50px;

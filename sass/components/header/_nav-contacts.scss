@@ -1,0 +1,59 @@
+/* Контакты в HEADER */
+.contacts {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: auto;
+  margin-bottom: 64px;
+
+  @media screen and (min-width: $w-tab) {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
+.contacts__item {
+  display: inline-flex;
+  &:last-child {
+    margin-bottom: 50px;
+  }
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $color-secondary;
+  fill: $color-secondary;
+  transition-property: color, fill;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+  &:hover,
+  &:focus {
+    color: $color-accent;
+    fill: $color-accent;
+  }
+  &--mail {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  &--tel {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $color-accent;
+  }
+  @media screen and (min-width: $w-tab) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.contacts__icon {
+  margin-right: 10px;
+}
