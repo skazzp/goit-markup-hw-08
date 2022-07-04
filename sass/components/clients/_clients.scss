@@ -2,20 +2,32 @@
 .clients__title {
   margin-bottom: 50px;
 }
-.clients-list {
-  display: flex;
-  gap: 30px;
+.clients-list__item {
+  --items: 2;
+  @media screen and (min-width: $w-tab) {
+    --items: 3;
+  }
+  @media screen and (min-width: $w-full) {
+    --items: 6;
+  }
 }
 .clients-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: $soc-main-color;
   transition: fill $duration $timing, border $duration $timing;
+
+  @media screen and (min-width: $w-tab) {
+    width: 226px;
+  }
+  @media screen and (min-width: $w-full) {
+    width: 170px;
+  }
   &:hover,
   &:focus {
     border: 1px solid $color-accent;

@@ -1,20 +1,37 @@
 /* Subscription */
 .sub-box__title {
   margin-top: 12px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: $accent-text;
+  text-align: center;
+  @media screen and (min-width: $w-full) {
+    text-align: left;
+  }
 }
 .sub-form {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  width: 100%;
+  gap: 20px;
+  flex-direction: column;
+  @media screen and (min-width: $w-full) {
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+.sub-form__label {
+  width: 100%;
+  @media screen and (min-width: $w-full) {
+    display: flex;
+  }
 }
 .sub-form__input-box {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   line-height: 1.25;
@@ -24,6 +41,12 @@
   border-radius: 4px;
   margin-right: 12px;
   transition: border $duration $timing;
+  @media screen and (min-width: $w-tab) {
+    width: 450px;
+  }
+  @media screen and (min-width: $w-full) {
+    width: 358px;
+  }
 }
 .sub-form__input-box:hover,
 .sub-form__input-box:focus {

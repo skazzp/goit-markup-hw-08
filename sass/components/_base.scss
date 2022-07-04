@@ -16,6 +16,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: $w-phone;
   @media screen and (min-width: $w-tab) {
     width: $w-tab;
   }
@@ -25,8 +26,17 @@ body {
 }
 .section {
   margin: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $w-tab) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $w-full) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .center {
@@ -34,6 +44,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .title {
   color: $color-main;
   font-weight: 700;
@@ -60,4 +71,12 @@ body {
   border: transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.card-set__item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }

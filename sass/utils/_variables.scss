@@ -20,3 +20,8 @@ $timing: cubic-bezier(0.4, 0, 0.2, 1);
 $w-phone: 480px;
 $w-tab: 768px;
 $w-full: 1200px;
+// card-set
+:root {
+  --items: 1;
+  --indent: 30px;
+}

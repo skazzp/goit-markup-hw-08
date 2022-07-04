@@ -21,7 +21,7 @@
   display: block;
 }
 .nav-list__link {
-  // display: block;
+  display: block;
   color: $color-main;
   font-weight: 500;
   font-size: 40px;
@@ -39,6 +39,7 @@
   @media screen and (min-width: $w-tab) {
     font-size: 14px;
     line-height: 1.14;
+    padding: 32px 0px;
   }
 }
 .nav-list--current {

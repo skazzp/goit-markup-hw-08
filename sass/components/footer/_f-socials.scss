@@ -1,6 +1,8 @@
 /* Соцсети ФУТЕР */
 .footer-socials {
-  margin-right: 93px;
+  @media screen and (min-width: $w-full) {
+    margin-right: 0;
+  }
 }
 .footer-socials__title {
   margin-top: 12px;
@@ -9,6 +11,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $accent-text;
+  text-align: center;
+  @media screen and (min-width: $w-full) {
+    text-align: left;
+  }
 }
 .foot-socials-list {
   display: flex;
