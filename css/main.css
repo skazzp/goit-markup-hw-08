@@ -1144,9 +1144,7 @@ img {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: 0px;
   }
 }
 
@@ -1156,6 +1154,7 @@ img {
 @media screen and (min-width: 1200px) {
   .address-box {
     text-align: left;
+    margin-right: 70px;
   }
 }
 
@@ -1202,7 +1201,7 @@ img {
 /* Соцсети ФУТЕР */
 @media screen and (min-width: 1200px) {
   .footer-socials {
-    margin-right: 0;
+    margin-right: 93px;
   }
 }
 
@@ -1343,7 +1342,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .sub-form__input-box {
-    margin-right: 12px;
     width: 358px;
   }
 }
