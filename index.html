@@ -92,7 +92,7 @@
       <!-- Секция HERO -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero__header">Эффективные решения<br />для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
           <div class="center">
             <button class="btn" type="button" data-modal-open>Заказать услугу</button>
           </div>
@@ -280,7 +280,21 @@
           <h2 class="title team__title">Наша команда</h2>
           <ul class="list team-cards card-set">
             <li class="team-cards__item card-set__item">
-              <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" />
+              <img
+                srcset="
+                  ./images/igor-270.jpg 270w,
+                  ./images/igor-354.jpg 354w,
+                  ./images/igor-450.jpg 450w,
+                  ./images/igor-540.jpg 540w,
+                  ./images/igor-708.jpg 708w,
+                  ./images/igor-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/igor-450.jpg"
+                alt="Игорь Демьяненко"
+                width="450px"
+                height="460px"
+              />
               <div class="team-cards__desc">
                 <h3 class="team-cards__title">Игорь Демьяненко</h3>
                 <p class="team-cards__text">Product Designer</p>
@@ -317,7 +331,21 @@
               </div>
             </li>
             <li class="team-cards__item card-set__item">
-              <img src="./images/olga.jpg" alt="Ольга Репина" width="270" />
+              <img
+                srcset="
+                  ./images/olga-270.jpg 270w,
+                  ./images/olga-354.jpg 354w,
+                  ./images/olga-450.jpg 450w,
+                  ./images/olga-540.jpg 540w,
+                  ./images/olga-708.jpg 708w,
+                  ./images/olga-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/olga-450.jpg"
+                alt="Ольга Репина"
+                width="450px"
+                height="460px"
+              />
               <div class="team-cards__desc">
                 <h3 class="team-cards__title">Ольга Репина</h3>
                 <p class="team-cards__text">Frontend Developer</p>
@@ -354,7 +382,21 @@
               </div>
             </li>
             <li class="team-cards__item card-set__item">
-              <img src="./images/nikolai.jpg" alt="Николай Тарасов" width="270" />
+              <img
+                srcset="
+                  ./images/nikolai-270.jpg 270w,
+                  ./images/nikolai-354.jpg 354w,
+                  ./images/nikolai-450.jpg 450w,
+                  ./images/nikolai-540.jpg 540w,
+                  ./images/nikolai-708.jpg 708w,
+                  ./images/nikolai-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/nikolai-450.jpg"
+                alt="Николай Тарасов"
+                width="450px"
+                height="460px"
+              />
               <div class="team-cards__desc">
                 <h3 class="team-cards__title">Николай Тарасов</h3>
                 <p class="team-cards__text">Marketing</p>
@@ -391,7 +433,21 @@
               </div>
             </li>
             <li class="team-cards__item card-set__item">
-              <img src="./images/mihail.jpg" alt="Михаил Ермаков" width="270" />
+              <img
+                srcset="
+                  ./images/mihail-270.jpg 270w,
+                  ./images/mihail-354.jpg 354w,
+                  ./images/mihail-450.jpg 450w,
+                  ./images/mihail-540.jpg 540w,
+                  ./images/mihail-708.jpg 708w,
+                  ./images/mihail-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/mihail-450.jpg"
+                alt="Михаил Ермаков"
+                width="450px"
+                height="460px"
+              />
               <div class="team-cards__desc">
                 <h3 class="team-cards__title">Михаил Ермаков</h3>
                 <p class="team-cards__text">UI Designer</p>
@@ -431,7 +487,7 @@
         </div>
       </section>
       <!-- Секция CLIENTS -->
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="title clients__title">Постоянные клиенты</h2>
           <ul class="list clients-list card-set">
@@ -479,7 +535,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Футер -->
     <footer class="footer">

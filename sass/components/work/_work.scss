@@ -1,7 +1,7 @@
 /* Секция WORK */
 .work {
   display: none;
-  @media screen and (min-width: $w-tab) {
+  @media screen and (min-width: $w-full) {
     display: block;
     padding-top: 47px;
   }

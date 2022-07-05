@@ -35,11 +35,6 @@
     }
   }
 }
-
-// .modal-form__input:hover + .modal-form__icon,
-// .modal-form__input:focus + .modal-form__icon {
-//   fill: $color-accent;
-// }
 .modal-form__textarea {
   min-height: 120px;
   resize: none;
@@ -61,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 6px;
 }
 .modal-form__checkbox:checked + .modal-form__icon-check {
   outline: 2px solid $bg-button;
@@ -82,8 +77,13 @@
   border-radius: 2px;
 }
 .modal-form__agreement {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+  @media screen and (min-width: $w-full) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
   color: $color-secondary;
 }
 .modal-form__agreement-link {

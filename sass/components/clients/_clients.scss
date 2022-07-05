@@ -2,6 +2,10 @@
 .clients__title {
   margin-bottom: 50px;
 }
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
 .clients-list__item {
   --items: 2;
   @media screen and (min-width: $w-tab) {
@@ -15,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 210px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

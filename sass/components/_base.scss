@@ -16,12 +16,13 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: $w-phone;
+  max-width: $w-phone;
+
   @media screen and (min-width: $w-tab) {
-    width: $w-tab;
+    max-width: $w-tab;
   }
   @media screen and (min-width: $w-full) {
-    width: $w-full;
+    max-width: $w-full;
   }
 }
 .section {
