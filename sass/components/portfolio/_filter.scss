@@ -1,15 +1,20 @@
 /* ПОРТФОЛИО - Фильтр */
 .filter-list {
   display: flex;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left: auto;
   padding-right: auto;
+  gap: 8px;
+
+  @media screen and (min-width: $w-tab) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
-}
+
 .filter-list__btn {
   padding: 6px 22px;
   font-family: inherit;

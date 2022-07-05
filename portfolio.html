@@ -90,7 +90,6 @@
     <main>
       <section class="section projects">
         <div class="container">
-          <!-- Спрятать заголовок -->
           <h1 class="visually-hidden">Фильтры</h1>
           <ul class="list filter-list">
             <li class="filter-list__item">
@@ -109,11 +108,26 @@
               <button class="filter-list__btn" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list projects-list">
-            <li class="projects-list__item">
+          <ul class="list projects-list card-set">
+            <li class="projects-list__item card-set__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__pic-box">
-                  <img src="./images/portfolio1.jpg" alt="Технокряк" width="370px" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio1_lg@1x.jpg 1x, ./images/portfolio1_lg@2x.jpg 2x" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio1_m@1x.jpg 1x, ./images/portfolio1_m@2x.jpg 2x" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio1_sm@1x.jpg 1x, ./images/portfolio1_sm@2x.jpg 2x" />
+                    <img
+                      src="./images/portfolio1_sm@1x.jpg"
+                      alt="Технокряк"
+                      width="450px"
+                      height="294px"
+                  /></picture>
                   <p class="projects-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -126,14 +140,26 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item card-set__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__pic-box">
-                  <img
-                    src="./images/portfolio2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio2_lg@1x.jpg 1x, ./images/portfolio2_lg@2x.jpg 2x" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio2_m@1x.jpg 1x, ./images/portfolio2_m@2x.jpg 2x" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio2_sm@1x.jpg 1x, ./images/portfolio2_sm@2x.jpg 2x" />
+                    <img
+                      src="./images/portfolio2_sm@1x.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="450px"
+                      height="294px"
+                  /></picture>
+
                   <p class="projects-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -146,10 +172,25 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item card-set__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__pic-box">
-                  <img src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio3_lg@1x.jpg 1x, ./images/portfolio3_lg@2x.jpg 2x" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio3_m@1x.jpg 1x, ./images/portfolio3_m@2x.jpg 2x" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio3_sm@1x.jpg 1x, ./images/portfolio3_sm@2x.jpg 2x" />
+                    <img
+                      src="./images/portfolio3_sm@1x.jpg"
+                      alt="Ресторан Seafood"
+                      width="450px"
+                      height="294px"
+                  /></picture>
                   <p class="projects-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -162,10 +203,25 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item card-set__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__pic-box">
-                  <img src="./images/portfolio4.jpg" alt="Проект Prime" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio4_lg@1x.jpg 1x, ./images/portfolio4_lg@2x.jpg 2x" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio4_m@1x.jpg 1x, ./images/portfolio4_m@2x.jpg 2x" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio4_sm@1x.jpg 1x, ./images/portfolio4_sm@2x.jpg 2x" />
+                    <img
+                      src="./images/portfolio4_sm@1x.jpg"
+                      alt="Проект Prime"
+                      width="450px"
+                      height="294px"
+                  /></picture>
                   <p class="projects-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -178,10 +234,25 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item card-set__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__pic-box">
-                  <img src="./images/portfolio5.jpg" alt="Проект Boxes" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio5_lg@1x.jpg 1x, ./images/portfolio5_lg@2x.jpg 2x" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio5_m@1x.jpg 1x, ./images/portfolio5_m@2x.jpg 2x" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio5_sm@1x.jpg 1x, ./images/portfolio5_sm@2x.jpg 2x" />
+                    <img
+                      src="./images/portfolio5_sm@1x.jpg"
+                      alt="Проект Boxes"
+                      width="450px"
+                      height="294px"
+                  /></picture>
                   <p class="projects-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -194,10 +265,25 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item card-set__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__pic-box">
-                  <img src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio6_lg@1x.jpg 1x, ./images/portfolio6_lg@2x.jpg 2x" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio6_m@1x.jpg 1x, ./images/portfolio6_m@2x.jpg 2x" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio6_sm@1x.jpg 1x, ./images/portfolio6_sm@2x.jpg 2x" />
+                    <img
+                      src="./images/portfolio6_sm@1x.jpg"
+                      alt="Inspiration has no Borders"
+                      width="450px"
+                      height="294px"
+                  /></picture>
                   <p class="projects-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -210,10 +296,25 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item card-set__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__pic-box">
-                  <img src="./images/portfolio7.jpg" alt="Издание Limited Edition" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio7_lg@1x.jpg 1x, ./images/portfolio7_lg@2x.jpg 2x" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio7_m@1x.jpg 1x, ./images/portfolio7_m@2x.jpg 2x" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio7_sm@1x.jpg 1x, ./images/portfolio7_sm@2x.jpg 2x" />
+                    <img
+                      src="./images/portfolio7_sm@1x.jpg"
+                      alt="Издание Limited Edition"
+                      width="450px"
+                      height="294px"
+                  /></picture>
                   <p class="projects-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -226,10 +327,25 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item card-set__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__pic-box">
-                  <img src="./images/portfolio8.jpg" alt="Проект LAB" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio8_lg@1x.jpg 1x, ./images/portfolio8_lg@2x.jpg 2x" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio8_m@1x.jpg 1x, ./images/portfolio8_m@2x.jpg 2x" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio8_sm@1x.jpg 1x, ./images/portfolio8_sm@2x.jpg 2x" />
+                    <img
+                      src="./images/portfolio8_sm@1x.jpg"
+                      alt="Проект LAB"
+                      width="450px"
+                      height="294px"
+                  /></picture>
                   <p class="projects-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -242,10 +358,25 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item card-set__item">
               <a href="" class="projects-list__link">
                 <div class="projects-list__pic-box">
-                  <img src="./images/portfolio9.jpg" alt="Growing Business" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio9_lg@1x.jpg 1x, ./images/portfolio9_lg@2x.jpg 2x" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio9_m@1x.jpg 1x, ./images/portfolio9_m@2x.jpg 2x" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio9_sm@1x.jpg 1x, ./images/portfolio9_sm@2x.jpg 2x" />
+                    <img
+                      src="./images/portfolio9_sm@1x.jpg"
+                      alt="Growing Business"
+                      width="450px"
+                      height="294px"
+                  /></picture>
                   <p class="projects-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -345,5 +476,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
