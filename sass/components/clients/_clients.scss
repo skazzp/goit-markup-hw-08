@@ -1,6 +1,9 @@
 /* Секция CLIENTS */
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: $w-full) {
+    margin-bottom: 50px;
+  }
 }
 .clients-list {
   display: flex;

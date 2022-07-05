@@ -599,12 +599,17 @@ img {
   padding: 40px;
   z-index: 999;
   width: 450px;
-  max-width: 528px;
+  max-width: 100%;
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .btn-close {
@@ -818,7 +823,6 @@ img {
 }
 
 .features-list__item {
-  margin-bottom: 30px;
   width: 450px;
 }
 @media screen and (min-width: 768px) {
@@ -860,6 +864,11 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features-list__title {
+    text-align: left;
+  }
 }
 
 .features-list__text {
@@ -1038,7 +1047,12 @@ img {
 
 /* Секция CLIENTS */
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
@@ -1377,6 +1391,14 @@ img {
   gap: 8px;
 }
 @media screen and (min-width: 768px) {
+  .filter-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .filter-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

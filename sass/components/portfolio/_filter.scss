@@ -11,6 +11,10 @@
 
   @media screen and (min-width: $w-tab) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $w-full) {
+    justify-content: center;
     margin-bottom: 50px;
   }
 }
